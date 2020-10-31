@@ -1,11 +1,15 @@
 import React from 'react';
 import Navigation from './Navigation';
 import { NavigationContainer } from '@react-navigation/native';
+import { StatusBar } from 'react-native';
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <Navigation/>
-    </NavigationContainer>
+    <>
+      <StatusBar barStyle="light-content" backgroundColor="#ccc" />
+      <NavigationContainer>
+        <Navigation/>
+      </NavigationContainer>
+    </>
   );
 }
